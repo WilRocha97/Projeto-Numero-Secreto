@@ -5,9 +5,24 @@
     --primary-color: #000000;
     --primary-text-color: #ffe600; 
     --secundary-text-color: #00d0ff;
+    --terciary-text-color: #ff005d;
 }
 
+@keyframes cyber-glitch-2 
+{
+    0% {clip-path: var(--og-clip-path); transform: translateX(0); text-shadow: none;}
+    2% {clip-path: polygon(0 40%, 0 100%, 100% 100%, 100% 40%); transform: translateX(0); text-shadow: var(--terciary-text-color) 1px 1px, var(--primary-text-color) -1px -1px;}
+    4% {clip-path: polygon(0 40%, 0 100%, 100% 100%, 100% 40%); transform: translateX(-1rem); text-shadow: var(--terciary-text-color) 1px 1px, var(--primary-text-color) -1px -1px;}
+    6% {clip-path: polygon(0 40%, 0 100%, 100% 100%, 100% 40%); transform: translateX(1rem); text-shadow: var(--terciary-text-color) 1px 1px, var(--primary-text-color) -1px -1px;}
+    8% {clip-path: polygon(0 40%, 0 100%, 100% 100%, 100% 40%); transform: translateX(0); text-shadow: var(--terciary-text-color) 1px 1px, var(--primary-text-color) -1px -1px;}
+    12% {clip-path: polygon(0 10%, 0 40%, 100% 40%, 100% 10%); transform: translateX(0); text-shadow: var(--terciary-text-color) 1px 1px, var(--primary-text-color) -1px -1px;}
+    14% {clip-path: var(--og-clip-path); transform: translateX(0); text-shadow: none;}
+    100% {clip-path: var(--og-clip-path); transform: translateX(0); text-shadow: none;}
+}
+
+
 body {
+    animation: cyber-glitch-2 4s;
     background-color: var(--primary-color);
     color: var(--primary-text-color);
     min-height: 100vh;
@@ -61,6 +76,17 @@ i {
     font-weight: bold;
 }
 
+.btn-iniciar {
+    text-decoration: none;
+    font-weight: bold;
+    background-color: var(--secundary-text-color);
+    clip-path: polygon(100% 0, 100% calc(100% - 15px), calc(100% - 15px) 100%, 0 100%, 0 0);
+    color: #000000;
+    font-size: 0.5em;
+    padding: 10px;
+    margin-left: 10px;
+}
+
 .btn-reiniciar {
     border: solid var(--secundary-text-color);
     font-family: var(--font-family);
@@ -72,4 +98,9 @@ i {
     padding: 10px;
     margin-left: 10px;
     cursor: pointer;
+}
+
+.btn-iniciar:hover,
+.btn-reiniciar:hover {
+    background-color: #ffffff;
 }
