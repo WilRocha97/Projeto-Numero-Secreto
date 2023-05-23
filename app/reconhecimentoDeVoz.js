@@ -30,3 +30,4 @@ function elementoChute(chute) {
     `
 }
 
+recognition.addEventListener('end', () => recognition=start())
