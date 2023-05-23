@@ -1,7 +1,6 @@
 const elementoChute = document.getElementById('chute')
 
-window.SpeechRecognition = window.SpeechRecognition || 
-webkitSpeechRecognition;
+window.SpeechRecognition = window.SpeechRecognition || webkitSpeechRecognition;
 
 //configura a linguagem do reconhecimento de voz e incia a api
 const recognition = new SpeechRecognition();
@@ -13,7 +12,7 @@ recognition.addEventListener('result', onSpeak)
 
 function onSpeak(e) {
     // captura o conteudo transcrito pela api
-    chute = e.result[0][0].transcript
+    chute = e.results[0][0].transcript
     //exibe na tela
     exibeChuteNaTela(chute)
     //valida o valor do chute
@@ -21,7 +20,7 @@ function onSpeak(e) {
 }
 
 //exibe na tela
-function elementoChute(chute) {
+function exibeChuteNaTela(chute) {
     elementoChute.innerHTML = `
         <div>Você disse:</div>
         <div class="resultado">
@@ -30,4 +29,4 @@ function elementoChute(chute) {
     `
 }
 
-recognition.addEventListener('end', () => recognition=start())
+recognition.addEventListener('end', () => recognition.start())

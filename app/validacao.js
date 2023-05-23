@@ -1,6 +1,6 @@
 //valida o chute
 function validaChute(chute) {
-    const numero =+ chute
+    const numero = +chute
 
     if (chuteInvalido(numero)) {
         elementoChute.innerHTML += '<div>Valor inválido, deve ser um número.</div>'
@@ -18,7 +18,7 @@ function validaChute(chute) {
         <span class="box">${numeroSecreto}</span>
         <button id="jogar-novamente" class="btn-reiniciar">Jogar novamente</button>
         `
-    }else if (numero < numeroSecreto) {
+    }else if (numero > numeroSecreto) {
         elementoChute.innerHTML = `
         <div>Você disse:</div>
         <div class="resultado">
@@ -26,7 +26,7 @@ function validaChute(chute) {
             <span class="box">${numero}</span>
         </div>
         `
-    }else if (numero > numeroSecreto) {
+    }else if (numero < numeroSecreto) {
         elementoChute.innerHTML = `
         <div>Você disse:</div>
         <div class="resultado">
