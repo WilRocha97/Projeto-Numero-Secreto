@@ -4,7 +4,7 @@
     --font-family: 'Chakra Petch', sans-serif;
     --primary-color: #000000;
     --primary-text-color: #ffe600; 
-    --secundary-text-color: #db006d;
+    --secundary-text-color: #00d0ff;
 }
 
 body {
@@ -15,6 +15,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 10px;
     text-align: center;
     margin: 0;
     font-family: var(--font-family);
@@ -47,7 +48,7 @@ h3 {
 
 .box {
     background-color: var(--primary-text-color);
-    clip-path: polygon(100% 0, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%, 0 0);
+    clip-path: polygon(100% 0, 100% calc(100% - 15px), calc(100% - 30px) 100%, 0 100%, 0 0);
     color: #000000;
     display: inline-block;
     font-size: 4em;
@@ -58,4 +59,17 @@ h3 {
 i {
     color: var(--primary-text-color);
     font-weight: bold;
+}
+
+.btn-reiniciar {
+    border: solid var(--secundary-text-color);
+    font-family: var(--font-family);
+    font-weight: bold;
+    background-color: var(--secundary-text-color);
+    clip-path: polygon(100% 0, 100% calc(100% - 15px), calc(100% - 15px) 100%, 0 100%, 0 0);
+    color: #000000;
+    font-size: 1em;
+    padding: 10px;
+    margin-left: 10px;
+    cursor: pointer;
 }
