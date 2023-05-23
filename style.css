@@ -104,3 +104,8 @@ i {
 .btn-reiniciar:hover {
     background-color: #ffffff;
 }
+
+.game-over {
+    font-size: 5em;
+    color: var(--terciary-text-color);
+}

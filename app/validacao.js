@@ -24,20 +24,32 @@ function validaChute(chute) {
         <div class="resultado">
             <div>O número secreto é menor <i><</i></div>
             <span class="box">${numero}</span>
-        </div>`
+        </div>
+        `
     }else if (numero > numeroSecreto) {
         elementoChute.innerHTML = `
         <div>Você disse:</div>
         <div class="resultado">
             <div>O número secreto é maior <i>></i></div>
             <span class="box">${numero}</span>
-        </div>`
+        </div>
+        `
     }
 }
 
 //verifica se é um número
 function chuteInvalido(numero) {
+    if (chute.toUpperCase() === "GAME OVER") {
+
+        document.body.innerHTML =`
+            <h1 class="game-over">GAME OVER!</h1>
+            <span class="box">${numeroSecreto}</span>
+            <button id="jogar-novamente" class="btn-reiniciar">Jogar novamente</button>
+            `
+            document.body.style.backgroundColor = "black";
+    } else {
     return Number.isNaN(numero)
+    }
 }
 
 
