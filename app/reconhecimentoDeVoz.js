@@ -1,16 +1,17 @@
 const elementoChute = document.getElementById('chute')
 const form = document.getElementById("palpite")
 quantidade.value = ""
+try {
+    window.SpeechRecognition = window.SpeechRecognition || webkitSpeechRecognition;
 
-window.SpeechRecognition = window.SpeechRecognition || webkitSpeechRecognition;
+    //configura a linguagem do reconhecimento de voz e incia a api
+    const recognition = new SpeechRecognition();
+    recognition.lang = 'pt-Br'
+    recognition.start()
 
-//configura a linguagem do reconhecimento de voz e incia a api
-const recognition = new SpeechRecognition();
-recognition.lang = 'pt-Br'
-recognition.start()
-
-//captura o evento de fala
-recognition.addEventListener('result', onSpeak)
+    //captura o evento de fala
+    recognition.addEventListener('result', onSpeak)
+} catch{}
 
 function onSpeak(e) {
     // captura o conteudo transcrito pela api
