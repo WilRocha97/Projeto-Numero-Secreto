@@ -63,7 +63,7 @@ h3 {
 
 .box {
     background-color: var(--primary-text-color);
-    clip-path: polygon(100% 0, 100% calc(100% - 15px), calc(100% - 30px) 100%, 0 100%, 0 0);
+    clip-path: polygon(100% 0, 100% calc(100% - 15px), calc(100% - 15px) 100%, 0 100%, 0 0);
     color: #000000;
     display: inline-block;
     font-size: 4em;
@@ -106,7 +106,7 @@ i {
     font-family: var(--font-family);
     font-size: 1.5em;
     background-color: var(--secundary-text-color);
-    clip-path: polygon(100% 0, 100% calc(100% - 15px), calc(100% - 15px) 100%, 0 100%, 0 0);
+    clip-path: polygon(100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%, 0 0);
     color: #000000;
     margin-left: 10px;
 }
