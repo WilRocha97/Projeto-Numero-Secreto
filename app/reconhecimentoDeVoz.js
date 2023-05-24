@@ -1,3 +1,4 @@
+var tentativas = 0
 const elementoChute = document.getElementById('chute')
 const form = document.getElementById("palpite")
 quantidade.value = ""
@@ -19,7 +20,7 @@ function onSpeak(e) {
     //exibe na tela
     exibeChuteNaTela(chute)
     //valida o valor do chute
-    validaChute(chute)
+    tentativas = validaChute(chute, tentativas)
 }
 
 form.addEventListener("submit", (evento) => {
@@ -31,7 +32,7 @@ form.addEventListener("submit", (evento) => {
     //exibe na tela
     exibeChuteNaTela(chute)
     //valida o valor do chute
-    validaChute(chute)
+    tentativas = validaChute(chute, tentativas)
 
     quantidade.value = ""
     quantidade.focus()

@@ -1,20 +1,21 @@
 //valida o chute
-function validaChute(chute) {
+function validaChute(chute, tentativas) {
     const numero = +chute
-
+    tentativas ++
     if (chuteInvalido(numero)) {
         elementoChute.innerHTML += '<div>Valor inválido, deve ser um número.</div>'
-        return
+        return tentativas
     }
 
     if (maiorMenor(numero)) {
         elementoChute.innerHTML += `<div>Valor inválido, fale um número entre ${menorValor} e ${maiorValor}.</div>`
-        return
+        return tentativas
     }
 
     if (numero === numeroSecreto) {
         document.body.innerHTML = `
         <h1>Você acertou!</h1>
+        <h4>${tentativas} tentativas.</h4>
         <span class="box">${numeroSecreto}</span>
         <button id="jogar-novamente" class="btn-reiniciar">Jogar novamente</button>
         `
@@ -35,6 +36,7 @@ function validaChute(chute) {
         </div>
         `
     }
+    return tentativas
 }
 
 //verifica se é um número
