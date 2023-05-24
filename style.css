@@ -11,11 +11,11 @@
 @keyframes cyber-glitch-2 
 {
     0% {clip-path: var(--og-clip-path); transform: translateX(0); text-shadow: none;}
-    2% {clip-path: polygon(0 40%, 0 100%, 100% 100%, 100% 40%); transform: translateX(0); text-shadow: var(--terciary-text-color) 3px 3px, var(--primary-text-color) -3px -3px;}
-    4% {clip-path: polygon(0 40%, 0 100%, 100% 100%, 100% 40%); transform: translateX(-1rem); text-shadow: var(--terciary-text-color) 3px 3px, var(--primary-text-color) -3px -3px;}
-    6% {clip-path: polygon(0 40%, 0 100%, 100% 100%, 100% 40%); transform: translateX(1rem); text-shadow: var(--terciary-text-color) 3px 3px, var(--primary-text-color) -3px -3px;}
-    8% {clip-path: polygon(0 40%, 0 100%, 100% 100%, 100% 40%); transform: translateX(0); text-shadow: var(--terciary-text-color) 3px 3px, var(--primary-text-color) -3px -3px;}
-    12% {clip-path: polygon(0 10%, 0 40%, 100% 40%, 100% 10%); transform: translateX(0); text-shadow: var(--terciary-text-color) 3px 3px, var(--primary-text-color) -3px -3px;}
+    2% {clip-path: polygon(0 40%, 0 100%, 100% 100%, 100% 40%); transform: translateX(0); text-shadow: var(--terciary-text-color) 3px 3px, var(--secundary-text-color) -3px -3px;}
+    4% {clip-path: polygon(0 40%, 0 100%, 100% 100%, 100% 40%); transform: translateX(-1rem); text-shadow: var(--terciary-text-color) 3px 3px, var(--secundary-text-color) -3px -3px;}
+    6% {clip-path: polygon(0 40%, 0 100%, 100% 100%, 100% 40%); transform: translateX(1rem); text-shadow: var(--terciary-text-color) 3px 3px, var(--secundary-text-color) -3px -3px;}
+    8% {clip-path: polygon(0 40%, 0 100%, 100% 100%, 100% 40%); transform: translateX(0); text-shadow: var(--terciary-text-color) 3px 3px, var(--secundary-text-color) -3px -3px;}
+    12% {clip-path: polygon(0 10%, 0 40%, 100% 40%, 100% 10%); transform: translateX(0); text-shadow: var(--terciary-text-color) 3px 3px, var(--secundary-text-color) -3px -3px;}
     14% {clip-path: var(--og-clip-path); transform: translateX(0); text-shadow: none;}
     100% {clip-path: var(--og-clip-path); transform: translateX(0); text-shadow: none;}
 }
