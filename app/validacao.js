@@ -39,16 +39,18 @@ function validaChute(chute) {
 
 //verifica se é um número
 function chuteInvalido(numero) {
-    if (chute.toUpperCase() === "GAME OVER") {
+    if (Number.isNaN(numero)){
+        if (chute.toUpperCase() === "GAME OVER") {
 
-        document.body.innerHTML =`
-            <h1 class="game-over">GAME OVER!</h1>
-            <span class="box">${numeroSecreto}</span>
-            <button id="jogar-novamente" class="btn-reiniciar">Jogar novamente</button>
-            `
-            document.body.style.backgroundColor = "black";
-    } else {
-    return Number.isNaN(numero)
+            document.body.innerHTML =`
+                <h1 class="game-over">GAME OVER!</h1>
+                <span class="box">${numeroSecreto}</span>
+                <button id="jogar-novamente" class="btn-reiniciar">Jogar novamente</button>
+                `
+                document.body.style.backgroundColor = "black";
+        }else {
+            return Number.isNaN(numero)
+            }
     }
 }
 

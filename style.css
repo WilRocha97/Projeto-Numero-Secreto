@@ -32,7 +32,7 @@ body {
     justify-content: center;
     gap: 10px;
     text-align: center;
-    margin: 0;
+    margin: 2em;
     font-family: var(--font-family);
 }
 
@@ -100,6 +100,17 @@ i {
     cursor: pointer;
 }
 
+.btn-enviar {
+    border: solid var(--secundary-text-color);
+    font-weight: bold;
+    font-family: var(--font-family);
+    font-size: 1.5em;
+    background-color: var(--secundary-text-color);
+    clip-path: polygon(100% 0, 100% calc(100% - 15px), calc(100% - 15px) 100%, 0 100%, 0 0);
+    color: #000000;
+    margin-left: 10px;
+}
+
 .btn-iniciar:hover,
 .btn-reiniciar:hover {
     background-color: #ffffff;
@@ -108,4 +119,34 @@ i {
 .game-over {
     font-size: 5em;
     color: var(--terciary-text-color);
+}
+
+.palpite {
+    margin-top: 2em;
+}
+
+.input {
+    width: 10em;
+    font-size: 1.5em;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: var(--font-family);
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    border-bottom: solid 2px var(--primary-text-color);
+}
+
+.input:focus {
+    outline: none;
+    cursor: pointer;
+    caret-color: var(--terciary-text-color);
+    border-bottom: solid 3px var(--terciary-text-color);
+    
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }

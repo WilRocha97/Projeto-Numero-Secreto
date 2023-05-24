@@ -1,4 +1,6 @@
 const elementoChute = document.getElementById('chute')
+const form = document.getElementById("palpite")
+quantidade.value = ""
 
 window.SpeechRecognition = window.SpeechRecognition || webkitSpeechRecognition;
 
@@ -18,6 +20,21 @@ function onSpeak(e) {
     //valida o valor do chute
     validaChute(chute)
 }
+
+form.addEventListener("submit", (evento) => {
+    // previne a ação padrão do botão
+    evento.preventDefault()
+    console.log(evento)
+    // captura e manda os textos inseridos nos campos de nome e quantidade
+    const chute = evento.target.elements[0].value
+    //exibe na tela
+    exibeChuteNaTela(chute)
+    //valida o valor do chute
+    validaChute(chute)
+
+    quantidade.value = ""
+    quantidade.focus()
+    })
 
 //exibe na tela
 function exibeChuteNaTela(chute) {
