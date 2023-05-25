@@ -6,6 +6,7 @@
     --primary-text-color: #ffe600; 
     --secundary-text-color: #00d0ff;
     --terciary-text-color: #ff005d;
+    --og-clip-path: polygon(100% 0, 100% calc(100% - 15px), calc(100% - 15px) 100%, 0 100%, 0 0);
 }
 
 @keyframes cyber-glitch-2 
@@ -62,8 +63,9 @@ h3 {
 }
 
 .box {
+    animation: cyber-glitch-2 2s;
     background-color: var(--primary-text-color);
-    clip-path: polygon(100% 0, 100% calc(100% - 15px), calc(100% - 15px) 100%, 0 100%, 0 0);
+    clip-path: var(--og-clip-path);
     color: #000000;
     display: inline-block;
     font-size: 4em;
@@ -80,7 +82,7 @@ i {
     text-decoration: none;
     font-weight: bold;
     background-color: var(--secundary-text-color);
-    clip-path: polygon(100% 0, 100% calc(100% - 15px), calc(100% - 15px) 100%, 0 100%, 0 0);
+    clip-path: var(--og-clip-path);
     color: #000000;
     font-size: 0.5em;
     padding: 10px;
@@ -92,7 +94,7 @@ i {
     font-family: var(--font-family);
     font-weight: bold;
     background-color: var(--secundary-text-color);
-    clip-path: polygon(100% 0, 100% calc(100% - 15px), calc(100% - 15px) 100%, 0 100%, 0 0);
+    clip-path: var(--og-clip-path);
     color: #000000;
     font-size: 1em;
     padding: 10px;
