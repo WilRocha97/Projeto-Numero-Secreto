@@ -23,13 +23,13 @@
 }
 
 body {
-    animation: cyber-glitch-2 2s;
     background-color: var(--primary-color);
     color: var(--primary-text-color);
     font-family: var(--font-family);
 }
 
 .tela {
+    animation: cyber-glitch-2 2s;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
