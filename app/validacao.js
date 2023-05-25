@@ -13,7 +13,7 @@ function validaChute(chute, tentativas) {
     }
 
     if (numero === numeroSecreto) {
-        document.body.innerHTML = `
+        document.getElementsByClassName("tela")[0].innerHTML = `
         <h1>Você acertou!</h1>
         <h4>${tentativas} tentativas.</h4>
         <span class="box">${numeroSecreto}</span>
@@ -44,7 +44,7 @@ function chuteInvalido(numero) {
     if (Number.isNaN(numero)){
         if (chute.toUpperCase() === "GAME OVER") {
 
-            document.body.innerHTML =`
+            document.getElementsByClassName("tela")[0].innerHTML =`
                 <h1 class="game-over">GAME OVER!</h1>
                 <span class="box">${numeroSecreto}</span>
                 <button id="jogar-novamente" class="btn-reiniciar">Jogar novamente</button>

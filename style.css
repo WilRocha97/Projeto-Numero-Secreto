@@ -3,10 +3,11 @@
 :root {
     --font-family: 'Chakra Petch', sans-serif;
     --primary-color: #000000;
-    --primary-text-color: #ffe600; 
-    --secundary-text-color: #00d0ff;
+    --primary-text-color: #e5ff00; 
+    --secundary-text-color: #00aeff;
     --terciary-text-color: #ff005d;
     --og-clip-path: polygon(100% 0, 100% calc(100% - 15px), calc(100% - 15px) 100%, 0 100%, 0 0);
+    --og-clip-path-small:polygon(100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%, 0 0);
 }
 
 @keyframes cyber-glitch-2 
@@ -21,11 +22,14 @@
     100% {clip-path: var(--og-clip-path); transform: translateX(0); text-shadow: none;}
 }
 
-
 body {
     animation: cyber-glitch-2 2s;
     background-color: var(--primary-color);
     color: var(--primary-text-color);
+    font-family: var(--font-family);
+}
+
+.tela {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -34,7 +38,6 @@ body {
     gap: 10px;
     text-align: center;
     margin: 2em;
-    font-family: var(--font-family);
 }
 
 h1 {
@@ -107,7 +110,7 @@ i {
     font-family: var(--font-family);
     font-size: 1.5em;
     background-color: var(--secundary-text-color);
-    clip-path: polygon(100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%, 0 0);
+    clip-path: var(--og-clip-path-small);
     color: #000000;
     margin-left: 10px;
     cursor: pointer;
@@ -117,7 +120,6 @@ i {
 .btn-reiniciar:hover,
 .btn-enviar:hover {
     background-color: #ffffff;
-    
 }
 
 .game-over {
@@ -153,4 +155,18 @@ input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+.rodape {
+    background-color: var(--primary-text-color);
+    color: #000000;
+    display: flex;
+    justify-content: center;
+    margin-top: 10rem;
+    padding: 0.5em;
+}
+
+.link__padrao {
+    text-decoration: none;
+    color: #000000;
 }

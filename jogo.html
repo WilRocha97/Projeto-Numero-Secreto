@@ -10,19 +10,24 @@
     <title>Número Secreto</title>
 </head>
 <body>
-    <h1>Acerte o número secreto <a class="btn-iniciar" href="index.html">Encerrar</a></h1>
-    <h3>O número secreto está entre <span id="menor-valor">0</span> e <span id="maior-valor">1000</span></h3>
-    <form id="palpite" class="palpite">
-        <input type="number" id="quantidade" class="input" placeholder="0000">
-        <input type="submit" value="Enviar" class="btn-enviar">
-    </form>
-    <div id="chute" class="mensagem">
-    <!--<div>Você disse:</div>
-        <div class="resultado">
-            <div>O número secreto é maior <i>></i></div>
-            <span class="box">20</span>
-        </div>-->
+    <div class="tela">  
+        <h1>Acerte o número secreto <a class="btn-iniciar" href="index.html">Encerrar</a></h1>
+        <h3>O número secreto está entre <span id="menor-valor">0</span> e <span id="maior-valor">1000</span></h3>
+        <form id="palpite" class="palpite">
+            <input type="number" id="quantidade" class="input" placeholder="0000">
+            <input type="submit" value="Enviar" class="btn-enviar">
+        </form>
+        <div id="chute" class="mensagem">
+        <!--<div>Você disse:</div>
+            <div class="resultado">
+                <div>O número secreto é maior <i>></i></div>
+                <span class="box">20</span>
+            </div>-->
+        </div>
     </div>
+    <footer class="rodape">
+        <p class="rodape__conteudo">🏳️‍🌈 Desenvolvido por <a class="link__padrao" href="https://wilrocha97.github.io/portfolio/" target="_blank" rel="noopener noreferrer">>> Willian Rodrigues <<</a></p>   
+    </footer>
 </body>
 <script src="app/sortearNumero.js"></script>
 <script src="app/reconhecimentoDeVoz.js"></script>
