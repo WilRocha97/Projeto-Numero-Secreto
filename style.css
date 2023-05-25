@@ -97,11 +97,10 @@ i {
     font-size: 1em;
     padding: 10px;
     margin-left: 10px;
-    cursor: pointer;
 }
 
 .btn-enviar {
-    border: solid var(--secundary-text-color);
+    border: none;
     font-weight: bold;
     font-family: var(--font-family);
     font-size: 1.5em;
@@ -109,11 +108,14 @@ i {
     clip-path: polygon(100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%, 0 0);
     color: #000000;
     margin-left: 10px;
+    cursor: pointer;
 }
 
 .btn-iniciar:hover,
-.btn-reiniciar:hover {
+.btn-reiniciar:hover,
+.btn-enviar:hover {
     background-color: #ffffff;
+    
 }
 
 .game-over {
