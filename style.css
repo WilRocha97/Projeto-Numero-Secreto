@@ -23,7 +23,7 @@
 
 
 body {
-    animation: cyber-glitch-2 4s;
+    animation: cyber-glitch-2 2s;
     background-color: var(--primary-color);
     color: var(--primary-text-color);
     min-height: 100vh;
