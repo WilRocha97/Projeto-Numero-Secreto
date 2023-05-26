@@ -83,7 +83,6 @@ i {
 
 .btn-iniciar {
     text-decoration: none;
-    font-weight: bold;
     background-color: var(--secundary-text-color);
     clip-path: var(--og-clip-path);
     color: #000000;
@@ -93,9 +92,8 @@ i {
 }
 
 .btn-reiniciar {
-    border: solid var(--secundary-text-color);
+    border: none;
     font-family: var(--font-family);
-    font-weight: bold;
     background-color: var(--secundary-text-color);
     clip-path: var(--og-clip-path);
     color: #000000;
@@ -106,7 +104,6 @@ i {
 
 .btn-enviar {
     border: none;
-    font-weight: bold;
     font-family: var(--font-family);
     font-size: 1.5em;
     background-color: var(--secundary-text-color);
