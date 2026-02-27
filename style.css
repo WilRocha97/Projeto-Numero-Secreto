@@ -126,6 +126,7 @@ i {
 
 .btn-iniciar:hover,
 .btn-reiniciar:hover,
+.btn-encerrar:hover,
 .btn-enviar:hover {
     background-color: #ffffff;
 }
